@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="player">
+        <div class="main-image">
+        <img id="immg"src="cover/img-0.jpg" alt="img">
+    </div>
+    <audio src="songs/asan_nahi.mp3"></audio>
+    <h3 id="name">Aasan Nahi Yahan</h3>
+    <p id="singer">Arijit Singh</p>
+    <div class="buttons"> 
+        <div class="previous">
+            <button id="previous"><i class='bx bx-skip-previous'></i></button>
+        </div>
+        <div class="play">
+        <button id="play"><i class='bx bx-play'></i></button> 
+    </div>
+    <div class="pause non">
+        <button id="pause "><i class='bx bx-pause' ></i></button> 
+      </div>
+      <div class="next">
+        <button id="next"><i class='bx bx-skip-next'></i></button>
+      </div>
+    </div>
+    <div class="slider">
+        <div class="in-time">
+            <p id="in-time">00:00</p>
+        </div>
+        <div class="rage"><input type="range" min="1" max="100" value="1" class="range" id="range"></div>
+        <div class="t-time"><p id="tt">00:00</p></div>
+    </div>
+    <div class="volume_slider">
+        <div class="time"><i class='bx bxs-volume-mute'></i></div>
+        <div class="volume-container"><input type="range" min="1" max="100" class="volume" id="volume" value="100"></div>
+        <div class="duration-time"><i class='bx bxs-volume-full' ></i></div>
+    </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
